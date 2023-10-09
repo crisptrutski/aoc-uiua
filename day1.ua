@@ -1,14 +1,13 @@
-# /↥∵(/+!∘) {[1000 2000 3000] [4000] [5000 6000] [7000 8000 9000] [10000]}
+eg ← "day1.example.txt"
+real ← "day1.txt"
 
-calories ← ∵(|1 /+⊜(/(+×10)∵(-@0))≠@\n. !) ⊜□-∶1⊂∶0⊢⍉⌕"\n\n"◫2. &fras
+parseFile ← ∵(|1 □⊜parse≠@\n.!)⊜□-∶1⊂∶0⊢⍉⌕"\n\n"◫2.&fras
 
-partOne ← &p /↥ calories
-partTwo ← &p /+↙¯3⊏⌂. calories
+partOne ← /↥ ∵(|1 /+!) parseFile
+partTwo ← /+↙¯3⊏⌂. ∵(|1 /+!) parseFile
 
-partOne "day1.example1.txt"
-partOne "day1.txt"
-
+&p partOne eg
+&p partOne real
 &p "----"
-
-partTwo "day1.example1.txt"
-partTwo "day1.txt"
+&p partTwo eg
+&p partTwo real
