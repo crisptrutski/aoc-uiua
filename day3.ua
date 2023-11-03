@@ -20,7 +20,7 @@ PartOne ← /+∵ScoreRow
 
 # Part 2
 CommonPair ← ▽≡(/+)⊞=,∩⊝
-CommonPair ← ▽memb,
+CommonPair ← ▽∊,∩⊝
 Common ← ⊐/CommonPair
 PartTwo ← /+∵(Lookup Letters)↯¯1⊐≡(Common)↯¯1_3
 
